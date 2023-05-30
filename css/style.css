@@ -13,13 +13,13 @@
     VARIABLES
 */
     :root {
-        
+
         /* Color Palette */
         
-        --main_color: #340068;
         --white: #FFFFFF;
-        --secondary_color: #7DCFB6;
-
+        --black: #000000;
+        --main_color: #1B998B;
+        --secondary_color: #FF9B71;
     }
 
 
@@ -27,7 +27,27 @@
     GENERAL
 */
 
+.mb_20 {
+    margin-bottom: 1.25rem;
+}
 
-/* 
-    MAIN
-*/
+.p_3 {
+    padding: .1875rem;
+}
+
+.bg_secondary {
+    background-color: var(--secondary_color);
+}
+
+.row {
+    min-height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    background-color: var(--main_color);
+    color: var(--white);
+}
+
+
+.row > * {
+    border: .0625rem solid var(--white);
+}
